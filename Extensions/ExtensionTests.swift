@@ -118,8 +118,8 @@ class EmojiFun: QuickSpec {
         describe("unicornLevel:") {
             
             it("unicornLevel computed property should return unicorns") {
-                let name = "Joseph Gingle Heimer Schmitt"
-                expect(name.unicornLevel).to(equal("🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄"))
+                let name = "Joseph"
+                expect(name.unicornLevel).to(equal("🦄🦄🦄🦄🦄🦄"))
             }
         }
     }
