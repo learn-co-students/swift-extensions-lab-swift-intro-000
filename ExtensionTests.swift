@@ -32,17 +32,18 @@ class StringExtensions: QuickSpec {
             }
         }
         
-        /*
+        
         describe("piglatin:") {
             
             it("pigLatin computed property should have ay appended to the string" ) {
-
+                
                 expect(name.pigLatin).to(equal("Osephjay Inglegay Eimerhay Chmittsay"))
+
             }
         }
- */
+ 
         
-        /*
+        
         
         describe("points:") {
             
@@ -52,6 +53,7 @@ class StringExtensions: QuickSpec {
             }
         }
         
+    
         describe("points:") {
             
             it("points computed property should add 2 point for vowels") {
@@ -59,6 +61,8 @@ class StringExtensions: QuickSpec {
                 expect(vowels.points).to(equal(12))
             }
         }
+        
+        
         
         describe("points:") {
             
@@ -68,7 +72,7 @@ class StringExtensions: QuickSpec {
                 expect(mixed.points).to(equal(11))
             }
         }
- */
+ 
     }
 }
 
@@ -79,13 +83,15 @@ class IntExtensions: QuickSpec {
         var sampleNumber = 123456
         let smallSampleNumber = 200
  
-    /*
+    
         describe("halved:") {
             
             it("halved computed property should return half") {
                 expect(sampleNumber.halved).to(equal(61728))
             }
         }
+         
+        
         describe("squared:") {
             
             it("squared computed property should return the square of itself") {
@@ -93,7 +99,7 @@ class IntExtensions: QuickSpec {
             }
         }
  
- */
+ 
         describe("half:") {
             
             it("half function should return half of itself") {
