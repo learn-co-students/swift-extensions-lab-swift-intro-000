@@ -15,6 +15,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let fullName = "Ramon Geronimo"
+        let phoneNumber = 8675309
+        
+        unicornLevelLabel.text = fullName.unicornLevel
         
     }
 }
