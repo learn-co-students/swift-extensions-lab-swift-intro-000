@@ -15,6 +15,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        var firstname = "Surendar S"
+        unicornLevelLabel.text = firstname.unicornLevel
+        var t = "aet12 u"
+        
+        print("++\(t.points)")
         
     }
 }
