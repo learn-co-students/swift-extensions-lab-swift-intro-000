@@ -22,9 +22,9 @@ extension String {
         var piggyWordArray = [String]()
         let wordArray = self.components(separatedBy: " ")
         for word in wordArray {
-            var piggyWord = word
+            var piggyWord = word.lowercased()
             let firstLetter = piggyWord.remove(at: startIndex)
-            piggyWord = piggyWord + String(firstLetter) + "ay"
+            piggyWord = piggyWord.capitalized + String(firstLetter) + "ay"
             piggyWordArray.append(piggyWord)
         }
         return piggyWordArray.joined(separator: " ")
@@ -32,11 +32,11 @@ extension String {
     
     var points: Int {
         var pointTotal = 0
-        let vowels = ["a", "e", "i", "o", "u"]
+        let vowels = ["a", "e", "i", "o", "u", "y"]
         let consonants = ["b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","z"]
         let wordArray = self.components(separatedBy: " ")
         for word in wordArray {
-            for char in word.characters {
+            for char in word.lowercased().characters {
                 if vowels.contains(String(char)) {
                     pointTotal += 2
                 } else if consonants.contains(String(char)) {
@@ -49,7 +49,8 @@ extension String {
     
     var unicornLevel: String {
         var unicorns = ""
-        for char in self.characters {
+        let trimmedString = self.replacingOccurrences(of: " ", with: "")
+        for _ in trimmedString.characters {
             unicorns += "🦄"
         }
         return unicorns
@@ -75,6 +76,6 @@ extension Int {
     }
     
     var halved: Int {
-        return self/2
+        return half()
     }
 }
