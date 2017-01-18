@@ -53,49 +53,39 @@ extension String {
     
     // also need to be refactored to use reduce/filter/map.
     var points: Int {
-        
-        // Start copy block
+        var totalPoints = 0
         var sounds = [
             "consonant" : ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "x", "z"],
             "vowels" : ["a", "e", "i", "o", "u", "w", "y"]
         ]
         
-        var totalPoints = 0
         if self.characters.count < 1 {
             return totalPoints
         } else {
-            
             var valueToCheck = self.lowercased().components(separatedBy: .whitespaces).joined(separator: "")
-            let countOfValueToCheck = valueToCheck.characters.count
-            
-            // this is a Set converted from an Array of valueToCheck
-            let rippedCharToSet = Set(valueToCheck.characters.map { String($0) } )
-            
-            // this is an Array of valueToCheck
             let rippedCharToArray = valueToCheck.characters.map { String($0) }
             
             if let
                 allVowels = sounds["vowels"],
                 let allConsonants = sounds["consonant"] {
-                var allVowels = allVowels
-                var allConsonants = allConsonants
+                let allVowels = allVowels
+                let allConsonants = allConsonants
                 
                 for eachLetter in rippedCharToArray {
                     if allVowels.contains(String(eachLetter)) {
-                        totalPoints += 1
+                        totalPoints += 2
                     }
                     
                     if allConsonants.contains(String(eachLetter)) {
-                        totalPoints += 2
+                        totalPoints += 1
                     }
                 }
-                
-            } // end of if let statement
-        } // end of else block
-        return totalPoints
-        // end copy block
+            }
+        }
         
-    } // end of points
+        return totalPoints
+        
+    }
     
     var length: Int {
         return self.characters.count
