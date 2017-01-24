@@ -37,6 +37,10 @@ extension String {
         return returnArray
     }
     
+    func stripWord() -> String {
+        return "Get this implemented. Insert the character.count crap here"
+    }
+    
     // refactor this with reduce/filter/map
     // need to include punctuations/regex stuff filter
     var pigLatin: String {
@@ -62,6 +66,8 @@ extension String {
         if self.characters.count < 1 {
             return totalPoints
         } else {
+            // take the next two lines out and dump it in a function returning an array and replace the for in loop value of rippedCharToArray into a parameter of that and/or initialized of this function
+            // refactoring due to the function unicornLevel being able to use it to adhere to DRY/KISS. Then just change it to unicorn. Can either take the count of the letters and print that many unicorns, or make it more dynamic? depends.
             var valueToCheck = self.lowercased().components(separatedBy: .whitespaces).joined(separator: "")
             let rippedCharToArray = valueToCheck.characters.map { String($0) }
             
@@ -82,9 +88,7 @@ extension String {
                 }
             }
         }
-        
         return totalPoints
-        
     }
     
     var length: Int {
@@ -93,6 +97,13 @@ extension String {
     
     // it needs to print a unicorn for each character in a given string. Call the function with the count of the self, then for loop. or no for loop.
     var unicornLevel: String {
+//        let unicornFood = self
+//        let numberOfUnicornFed = unicornFood.characters.count
+        /*
+         TODO:
+         - refactor points computed property indented by comment
+         */
+        
         print("Instructions are confusing.")
         return "Instructions are confusing."
     }
@@ -104,11 +115,7 @@ extension Int {
     // can't put return in the same line. I'm sure there was a way to make this into a one liner
     // if this was written as a mutating func, halved() wouldnt work due to self becoming immutable? weird error
     func half() -> Int {
-        let this = self
-        return this / 2
-        
-        // self = self / 2
-        // return self
+        return self / 2
     }
     
     func isDivisible(by number: Int) -> Bool {
