@@ -50,8 +50,8 @@ extension String {
             return convertedToStrings
         }
     }
-    
-    // also need to be refactored to use reduce/filter/map.
+    // ask Eli about using guard, guard if let, and if it can be refactored better
+    // also need to be refactored using reduce/filter/map & guards to take out the pyramid of doom
     var points: Int {
         var totalPoints = 0
         var sounds = [
@@ -91,6 +91,37 @@ extension String {
         return self.characters.count
     }
     
-} // end of extension
+    // it needs to print a unicorn for each character in a given string. Call the function with the count of the self, then for loop. or no for loop.
+    var unicornLevel: String {
+        print("Instructions are confusing.")
+        return "Instructions are confusing."
+    }
+    
+} // end of extension String
 
-
+extension Int {
+    
+    // can't put return in the same line. I'm sure there was a way to make this into a one liner
+    // if this was written as a mutating func, halved() wouldnt work due to self becoming immutable? weird error
+    func half() -> Int {
+        let this = self
+        return this / 2
+        
+        // self = self / 2
+        // return self
+    }
+    
+    func isDivisible(by number: Int) -> Bool {
+        return self % number == 0 ? true : false
+    }
+    
+    var squared: Int {
+        return self * self
+    }
+    
+    var halved: Int {
+        return self.half()
+    }
+    
+    
+} // end of extension Int
