@@ -18,7 +18,6 @@ extension String {
         return self.uppercased()
     }
     
-    // function for pigLatin
     // need to add regex filter
     // use reduce/map/filter to refactor this
     func processWord(array processedArray: [String]) -> [String] {
@@ -43,8 +42,8 @@ extension String {
         return rippedCharToArray
     }
     
-    // refactor this with reduce/filter/map
     // need to include punctuations/regex stuff filter
+    // refactor this with reduce/filter/map
     var pigLatin: String {
         let toConvert = self
         
@@ -56,7 +55,7 @@ extension String {
             return convertedToStrings
         }
     }
-    // ask Eli about using guard, guard if let, and if it can be refactored better
+    
     // also need to be refactored using reduce/filter/map & guards to take out the pyramid of doom
     var points: Int {
         var totalPoints = 0
@@ -68,9 +67,6 @@ extension String {
         if self.characters.count < 1 {
             return totalPoints
         } else {
-            // take the next two lines out and dump it in a function returning an array and replace the for in loop value of rippedCharToArray into a parameter of that and/or initialized of this function
-            // refactoring due to the function unicornLevel being able to use it to adhere to DRY/KISS. Then just change it to unicorn. Can either take the count of the letters and print that many unicorns, or make it more dynamic? depends.
-
             let rippedCharToArray = stripWord()
             
             if let
@@ -97,25 +93,21 @@ extension String {
         return self.characters.count
     }
     
-    // it needs to print a unicorn for each character in a given string. Call the function with the count of the self, then for loop. or no for loop.
     var unicornLevel: String {
-//        let unicornFood = self
-//        let numberOfUnicornFed = unicornFood.characters.count
-        /*
-         TODO:
-         - refactor points computed property indented by comment
-         */
+        var herdOfUnicorns = ""
+        let stringsToEat = self.components(separatedBy: .whitespaces).joined(separator: "").characters.count
         
-        print("Instructions are confusing.")
-        return "Instructions are confusing."
+        for _ in 0..<stringsToEat {
+            herdOfUnicorns += "🦄"
+        }
+        
+        return herdOfUnicorns
     }
     
-} // end of extension String
+}
 
 extension Int {
     
-    // can't put return in the same line. I'm sure there was a way to make this into a one liner
-    // if this was written as a mutating func, halved() wouldnt work due to self becoming immutable? weird error
     func half() -> Int {
         return self / 2
     }
@@ -133,4 +125,4 @@ extension Int {
     }
     
     
-} // end of extension Int
+}
