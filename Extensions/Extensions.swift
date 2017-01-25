@@ -32,13 +32,15 @@ extension String {
             let wordWithoutFirstLetter = heldEach[ripToChar]
             
             toReturn = wordWithoutFirstLetter + firstCharacter + "ay"
-            returnArray.append(toReturn)
+            returnArray.append(toReturn.capitalized)
         }
         return returnArray
     }
     
-    func stripWord() -> String {
-        return "Get this implemented. Insert the character.count crap here"
+    func stripWord() -> [String] {
+        var valueToCheck = self.lowercased().components(separatedBy: .whitespaces).joined(separator: "")
+        let rippedCharToArray = valueToCheck.characters.map { String($0) }
+        return rippedCharToArray
     }
     
     // refactor this with reduce/filter/map
@@ -68,8 +70,8 @@ extension String {
         } else {
             // take the next two lines out and dump it in a function returning an array and replace the for in loop value of rippedCharToArray into a parameter of that and/or initialized of this function
             // refactoring due to the function unicornLevel being able to use it to adhere to DRY/KISS. Then just change it to unicorn. Can either take the count of the letters and print that many unicorns, or make it more dynamic? depends.
-            var valueToCheck = self.lowercased().components(separatedBy: .whitespaces).joined(separator: "")
-            let rippedCharToArray = valueToCheck.characters.map { String($0) }
+
+            let rippedCharToArray = stripWord()
             
             if let
                 allVowels = sounds["vowels"],
