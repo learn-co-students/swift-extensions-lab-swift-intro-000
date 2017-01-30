@@ -12,9 +12,17 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var unicornLevelLabel: UILabel!
 
+    var fullName = "Ryan Dude"
+    var phoneNumber = 8675309
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let unicornPhrase = "My 🦄 is awesome"
+        print(unicornPhrase)
+        unicornLevelLabel.text = fullName.unicornLevel
         
     }
 }

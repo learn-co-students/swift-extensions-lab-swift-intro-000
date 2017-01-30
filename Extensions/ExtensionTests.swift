@@ -71,7 +71,7 @@ class StringExtensions: QuickSpec {
 class IntExtensions: QuickSpec {
     override func spec() {
         
-        var sampleNumber = 123456
+        let sampleNumber = 123456
         let smallSampleNumber = 200
         
         describe("halved:") {
