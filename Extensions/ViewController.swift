@@ -16,6 +16,24 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        
+        
+//        var testString = "La La Land"
+//        
+//        print("test string:\(testString.characters.first)")
+//        
+//        let firstCharacter = testString.characters.first
+//        testString.remove(at: testString.startIndex)
+//        testString.append(firstCharacter!)
+//        testString.append("ay")
+//        
+//        
+//        print("test string:\(testString)")
+
+
+
+        
+        
     }
 }
 
