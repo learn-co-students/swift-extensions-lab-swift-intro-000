@@ -86,13 +86,19 @@ class IntExtensions: QuickSpec {
                 expect(sampleNumber.squared).to(equal(15241383936))
             }
         }
+        
+        
         describe("half:") {
             
             it("half function should return half of itself") {
+                
                 let halfSampleNumber = sampleNumber.half()
-                expect(halfSampleNumber).to(equal(61728))
+                
+               expect(halfSampleNumber).to(equal(61728))
             }
         }
+        
+        
         describe("isDivisibleBy:") {
             
             it("isDivisibleBy function should return true if divisible") {
