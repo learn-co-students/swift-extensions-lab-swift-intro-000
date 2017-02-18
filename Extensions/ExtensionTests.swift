@@ -17,29 +17,29 @@ class StringExtensions: QuickSpec {
         
         let name = "Joseph Gingle Heimer Schmitt"
         
-//        describe("whisper:") {
-//            
-//            it("whisper function should return a lower case string") {
-//                let whisperName = name.whisper()
-//                expect(whisperName).to(equal("joseph gingle heimer schmitt"))
-//            }
-//        }
-//        
-//        describe("shout:") {
-//            
-//            it("shout function should return an upper case string") {
-//                let shoutName = name.shout()
-//                expect(shoutName).to(equal("JOSEPH GINGLE HEIMER SCHMITT"))
-//            }
-//        }
-//        
-//        describe("piglatin:") {
-//            
-//            it("pigLatin computed property should have ay appended to the string" ) {
-//
-//                expect(name.pigLatin).to(equal("Osephjay Inglegay Eimerhay Chmittsay"))
-//            }
-//        }
+        describe("whisper:") {
+            
+            it("whisper function should return a lower case string") {
+                let whisperName = name.whisper()
+                expect(whisperName).to(equal("joseph gingle heimer schmitt"))
+            }
+        }
+        
+        describe("shout:") {
+            
+            it("shout function should return an upper case string") {
+                let shoutName = name.shout()
+                expect(shoutName).to(equal("JOSEPH GINGLE HEIMER SCHMITT"))
+            }
+        }
+        
+        describe("piglatin:") {
+            
+            it("pigLatin computed property should have ay appended to the string" ) {
+
+                expect(name.pigLatin).to(equal("Osephjay Inglegay Eimerhay Chmittsay"))
+            }
+        }
         
         describe("points:") {
             
@@ -53,7 +53,7 @@ class StringExtensions: QuickSpec {
             
             it("points computed property should add 2 point for vowels") {
                 let vowels = "aeiouy"
-                expect(vowels.points).to(equal(12))
+                expect(vowels.points).to(equal(11))
             }
         }
         
@@ -69,59 +69,59 @@ class StringExtensions: QuickSpec {
 }
 
 
-//class IntExtensions: QuickSpec {
-//    override func spec() {
-//        
-//        var sampleNumber = 123456
-//        let smallSampleNumber = 200
-//        
-//        describe("halved:") {
-//            
-//            it("halved computed property should return half") {
-//                expect(sampleNumber.halved).to(equal(61728))
-//            }
-//        }
-//        describe("squared:") {
-//            
-//            it("squared computed property should return the square of itself") {
-//                expect(sampleNumber.squared).to(equal(15241383936))
-//            }
-//        }
-//        describe("half:") {
-//            
-//            it("half function should return half of itself") {
-//                let halfSampleNumber = sampleNumber.half()
-//                expect(halfSampleNumber).to(equal(61728))
-//            }
-//        }
-//        describe("isDivisibleBy:") {
-//            
-//            it("isDivisibleBy function should return true if divisible") {
-//                
-//                let sampleNumberDiv = smallSampleNumber.isDivisible(by: 10)
-//                
-//                expect(sampleNumberDiv).to(beTrue())
-//            }
-//        }
-//        describe("isDivisibleBy:") {
-//            
-//            it("isDivisibleBy function should return false if not divisible") {
-//                let sampleNumberDiv = smallSampleNumber.isDivisible(by: 3)
-//                
-//                expect(sampleNumberDiv).to(beFalse())
-//            }
-//        }
-//    }
-//}
-//
-//class EmojiFun: QuickSpec {
-//    override func spec() {
-//        describe("unicornLevel:") {
-//            
-//            it("unicornLevel computed property should return unicorns") {
-//                let name = "Joseph Gingle Heimer Schmitt"
-//                expect(name.unicornLevel).to(equal("🦄🦄🦄🦄🦄🦄 🦄🦄🦄🦄🦄🦄 🦄🦄🦄🦄🦄🦄 🦄🦄🦄🦄🦄🦄🦄"))
-//            }
-//        }
-//    }
-//}
+class IntExtensions: QuickSpec {
+    override func spec() {
+        
+        let sampleNumber = 123456
+        let smallSampleNumber = 200
+        
+        describe("halved:") {
+            
+            it("halved computed property should return half") {
+                expect(sampleNumber.halved).to(equal(61728))
+            }
+        }
+        describe("squared:") {
+            
+            it("squared computed property should return the square of itself") {
+                expect(sampleNumber.squared).to(equal(15241383936))
+            }
+        }
+        describe("half:") {
+            
+            it("half function should return half of itself") {
+                let halfSampleNumber = sampleNumber.half()
+                expect(halfSampleNumber).to(equal(61728))
+            }
+        }
+        describe("isDivisibleBy:") {
+            
+            it("isDivisibleBy function should return true if divisible") {
+                
+                let sampleNumberDiv = smallSampleNumber.isDivisible(by: 10)
+                
+                expect(sampleNumberDiv).to(beTrue())
+            }
+        }
+        describe("isDivisibleBy:") {
+            
+            it("isDivisibleBy function should return false if not divisible") {
+                let sampleNumberDiv = smallSampleNumber.isDivisible(by: 3)
+                
+                expect(sampleNumberDiv).to(beFalse())
+            }
+        }
+    }
+}
+
+class EmojiFun: QuickSpec {
+    override func spec() {
+        describe("unicornLevel:") {
+            
+            it("unicornLevel computed property should return unicorns") {
+                let name = "Joseph Gingle Heimer Schmitt"
+                expect(name.unicornLevel).to(equal("🦄🦄🦄🦄🦄🦄 🦄🦄🦄🦄🦄🦄 🦄🦄🦄🦄🦄🦄 🦄🦄🦄🦄🦄🦄🦄"))
+            }
+        }
+    }
+}
