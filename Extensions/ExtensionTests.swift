@@ -24,6 +24,7 @@ class StringExtensions: QuickSpec {
                 expect(whisperName).to(equal("joseph gingle heimer schmitt"))
             }
         }
+        
         describe("shout:") {
             
             it("shout function should return an upper case string") {
@@ -52,7 +53,7 @@ class StringExtensions: QuickSpec {
             
             it("points computed property should add 2 point for vowels") {
                 let vowels = "aeiouy"
-                expect(vowels.points).to(equal(12))
+                expect(vowels.points).to(equal(11))
             }
         }
         
@@ -71,7 +72,7 @@ class StringExtensions: QuickSpec {
 class IntExtensions: QuickSpec {
     override func spec() {
         
-        var sampleNumber = 123456
+        let sampleNumber = 123456
         let smallSampleNumber = 200
         
         describe("halved:") {
