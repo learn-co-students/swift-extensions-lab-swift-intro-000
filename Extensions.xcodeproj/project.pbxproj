@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		000AFAA78FC2C157B3B2FA11 /* Pods_ExtensionsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6183A09F1B2877C65C4D59F6 /* Pods_ExtensionsTests.framework */; };
+		0508B6151E8F946900D922C3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0508B6141E8F946900D922C3 /* Extensions.swift */; };
 		1B5229C31D2E927E0037A37E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B5229C21D2E927E0037A37E /* Foundation.framework */; };
 		1BA85B291D25C4FC008D42CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA85B281D25C4FC008D42CE /* AppDelegate.swift */; };
 		1BA85B2B1D25C4FC008D42CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA85B2A1D25C4FC008D42CE /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0508B6141E8F946900D922C3 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		0F5C7B63BB417CBE6BFA805C /* Pods-ExtensionsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtensionsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExtensionsTests/Pods-ExtensionsTests.release.xcconfig"; sourceTree = "<group>"; };
 		1B5229C21D2E927E0037A37E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1BA85B251D25C4FC008D42CE /* Extensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Extensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +140,7 @@
 				1BA85B341D25C4FC008D42CE /* Info.plist */,
 				1BA85B3C1D25C4FC008D42CE /* ExtensionsTests */,
 				1BA85B471D25C4FC008D42CE /* ExtensionsUITests */,
+				0508B6141E8F946900D922C3 /* Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BA85B2B1D25C4FC008D42CE /* ViewController.swift in Sources */,
+				0508B6151E8F946900D922C3 /* Extensions.swift in Sources */,
 				1BA85B291D25C4FC008D42CE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
