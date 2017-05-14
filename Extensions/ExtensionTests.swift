@@ -52,7 +52,7 @@ class StringExtensions: QuickSpec {
             
             it("points computed property should add 2 point for vowels") {
                 let vowels = "aeiouy"
-                expect(vowels.points).to(equal(12))
+                expect(vowels.points).to(equal(11))
             }
         }
         
