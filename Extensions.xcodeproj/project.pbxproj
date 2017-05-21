@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		000AFAA78FC2C157B3B2FA11 /* Pods_ExtensionsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6183A09F1B2877C65C4D59F6 /* Pods_ExtensionsTests.framework */; };
+		14C7DE191ECE002D003FDAF7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C7DE181ECE002D003FDAF7 /* Extensions.swift */; };
 		1B5229C31D2E927E0037A37E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B5229C21D2E927E0037A37E /* Foundation.framework */; };
 		1BA85B291D25C4FC008D42CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA85B281D25C4FC008D42CE /* AppDelegate.swift */; };
 		1BA85B2B1D25C4FC008D42CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA85B2A1D25C4FC008D42CE /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		0F5C7B63BB417CBE6BFA805C /* Pods-ExtensionsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtensionsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExtensionsTests/Pods-ExtensionsTests.release.xcconfig"; sourceTree = "<group>"; };
+		14C7DE181ECE002D003FDAF7 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1B5229C21D2E927E0037A37E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1BA85B251D25C4FC008D42CE /* Extensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Extensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA85B281D25C4FC008D42CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			children = (
 				1BA85B281D25C4FC008D42CE /* AppDelegate.swift */,
 				1BA85B2A1D25C4FC008D42CE /* ViewController.swift */,
+				14C7DE181ECE002D003FDAF7 /* Extensions.swift */,
 				1BA85B2C1D25C4FC008D42CE /* Main.storyboard */,
 				1BA85B2F1D25C4FC008D42CE /* Assets.xcassets */,
 				1BA85B311D25C4FC008D42CE /* LaunchScreen.storyboard */,
@@ -244,11 +247,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Flatiron School";
 				TargetAttributes = {
 					1BA85B241D25C4FC008D42CE = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 4P8H7DCL46;
 						LastSwiftMigration = 0800;
 					};
 					1BA85B381D25C4FC008D42CE = {
@@ -454,6 +458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BA85B2B1D25C4FC008D42CE /* ViewController.swift in Sources */,
+				14C7DE191ECE002D003FDAF7 /* Extensions.swift in Sources */,
 				1BA85B291D25C4FC008D42CE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,8 +529,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -547,7 +554,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -569,8 +576,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -586,9 +595,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -598,6 +608,7 @@
 			baseConfigurationReference = B67EC0B9E85177B62984CFFE /* Pods-Extensions.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4P8H7DCL46;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/KIF",
@@ -618,6 +629,7 @@
 			baseConfigurationReference = E5DD57B338C497566D3ACCF6 /* Pods-Extensions.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4P8H7DCL46;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/KIF",
