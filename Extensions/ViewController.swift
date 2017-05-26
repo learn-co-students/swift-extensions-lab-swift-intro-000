@@ -11,12 +11,20 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var unicornLevelLabel: UILabel!
-
+    var firstName: String = "Alif"
+    var lastName: String = "Khandoker"
+    
+    var fullName: String {
+        return firstName + lastName
+    }
+    
+    var phoneNumber: Int = 8675309
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
+        print("\(fullName): \(phoneNumber)")
+        unicornLevelLabel.text = unicornLevel
     }
+    
+    var unicornLevel = "My 🦄 is awesome"
 }
-
-

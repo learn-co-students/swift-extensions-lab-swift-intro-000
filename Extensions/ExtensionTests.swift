@@ -71,7 +71,7 @@ class StringExtensions: QuickSpec {
 class IntExtensions: QuickSpec {
     override func spec() {
         
-        var sampleNumber = 123456
+        let sampleNumber = 123456
         let smallSampleNumber = 200
         
         describe("halved:") {
@@ -97,7 +97,7 @@ class IntExtensions: QuickSpec {
             
             it("isDivisibleBy function should return true if divisible") {
                 
-                let sampleNumberDiv = smallSampleNumber.isDivisible(by: 10)
+                let sampleNumberDiv = smallSampleNumber.isDivisible(10)
                 
                 expect(sampleNumberDiv).to(beTrue())
             }
@@ -105,22 +105,22 @@ class IntExtensions: QuickSpec {
         describe("isDivisibleBy:") {
             
             it("isDivisibleBy function should return false if not divisible") {
-                let sampleNumberDiv = smallSampleNumber.isDivisible(by: 3)
+                let sampleNumberDiv = smallSampleNumber.isDivisible(3)
                 
                 expect(sampleNumberDiv).to(beFalse())
             }
         }
     }
 }
-
-class EmojiFun: QuickSpec {
-    override func spec() {
-        describe("unicornLevel:") {
-            
-            it("unicornLevel computed property should return unicorns") {
-                let name = "Joseph Gingle Heimer Schmitt"
-                expect(name.unicornLevel).to(equal("🦄🦄🦄🦄🦄🦄 🦄🦄🦄🦄🦄🦄 🦄🦄🦄🦄🦄🦄 🦄🦄🦄🦄🦄🦄🦄"))
-            }
-        }
-    }
-}
+////
+////class EmojiFun: QuickSpec {
+////    override func spec() {
+////        describe("unicornLevel:") {
+////            
+////            it("unicornLevel computed property should return unicorns") {
+////                let name = "Joseph Gingle Heimer Schmitt"
+////                expect(name.unicornLevel).to(equal("🦄🦄🦄🦄🦄🦄 🦄🦄🦄🦄🦄🦄 🦄🦄🦄🦄🦄🦄 🦄🦄🦄🦄🦄🦄🦄"))
+////            }
+////        }
+////    }
+////}
