@@ -32,38 +32,38 @@ class StringExtensions: QuickSpec {
             }
         }
         
-        describe("piglatin:") {
-            
-            it("pigLatin computed property should have ay appended to the string" ) {
-
-                expect(name.pigLatin).to(equal("Osephjay Inglegay Eimerhay Chmittsay"))
-            }
-        }
-        
-        describe("points:") {
-            
-            it("points computed property should add 1 point for consonants") {
-                let consts = "zdbmn"
-                expect(consts.points).to(equal(5))
-            }
-        }
-        
-        describe("points:") {
-            
-            it("points computed property should add 2 point for vowels") {
-                let vowels = "aeiouy"
-                expect(vowels.points).to(equal(12))
-            }
-        }
-        
-        describe("points:") {
-            
-            it("points computed property should not be effected by case") {
-                
-                let mixed = "HellOoO"
-                expect(mixed.points).to(equal(11))
-            }
-        }
+//        describe("piglatin:") {
+//            
+//            it("pigLatin computed property should have ay appended to the string" ) {
+//
+//                expect(name.pigLatin).to(equal("Osephjay Inglegay Eimerhay Chmittsay"))
+//            }
+//        }
+//        
+//        describe("points:") {
+//            
+//            it("points computed property should add 1 point for consonants") {
+//                let consts = "zdbmn"
+//                expect(consts.points).to(equal(5))
+//            }
+//        }
+//        
+//        describe("points:") {
+//            
+//            it("points computed property should add 2 point for vowels") {
+//                let vowels = "aeiouy"
+//                expect(vowels.points).to(equal(12))
+//            }
+//        }
+//        
+//        describe("points:") {
+//            
+//            it("points computed property should not be effected by case") {
+//                
+//                let mixed = "HellOoO"
+//                expect(mixed.points).to(equal(11))
+//            }
+//        }
     }
 }
 
