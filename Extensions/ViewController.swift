@@ -15,7 +15,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        let fullName: String = "Eric Jason Lein"
+        let phoneNumber: Int = 8675309
+        print(fullName.whisper(), fullName.shout(), fullName.pigLatin, fullName.points, fullName.unicornLevel)
+        print(phoneNumber.half(), phoneNumber.isDivisible(by: 3), phoneNumber.squared, phoneNumber.half())
+        unicornLevelLabel.text = fullName.unicornLevel
     }
 }
 
