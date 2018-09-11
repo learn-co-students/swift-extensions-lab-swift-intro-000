@@ -52,7 +52,7 @@ class StringExtensions: QuickSpec {
             
             it("points computed property should add 2 point for vowels") {
                 let vowels = "aeiouy"
-                expect(vowels.points).to(equal(12))
+                expect(vowels.points).to(equal(11))
             }
         }
         
@@ -97,7 +97,7 @@ class IntExtensions: QuickSpec {
             
             it("isDivisibleBy function should return true if divisible") {
                 
-                let sampleNumberDiv = smallSampleNumber.isDivisible(by: 10)
+                let sampleNumberDiv = smallSampleNumber.isDivisible(10)
                 
                 expect(sampleNumberDiv).to(beTrue())
             }
@@ -105,7 +105,7 @@ class IntExtensions: QuickSpec {
         describe("isDivisibleBy:") {
             
             it("isDivisibleBy function should return false if not divisible") {
-                let sampleNumberDiv = smallSampleNumber.isDivisible(by: 3)
+                let sampleNumberDiv = smallSampleNumber.isDivisible(3)
                 
                 expect(sampleNumberDiv).to(beFalse())
             }
