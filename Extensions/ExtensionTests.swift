@@ -15,7 +15,7 @@ import Nimble
 class StringExtensions: QuickSpec {
     override func spec() {
         
-        let name = "Joseph Gingle Heimer Schmitt"
+        var name = "Joseph Gingle Heimer Schmitt"
         
         describe("whisper:") {
             
@@ -90,7 +90,7 @@ class IntExtensions: QuickSpec {
             
             it("half function should return half of itself") {
                 let halfSampleNumber = sampleNumber.half()
-                expect(halfSampleNumber).to(equal(61728))
+                expect(halfSampleNumber).to(Nimble.equal(61728))
             }
         }
         describe("isDivisibleBy:") {
